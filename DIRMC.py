@@ -205,7 +205,7 @@ def explain_recommendations(adata, model, targets_data):
 # Main function
 def main():
    # Step 1: Load immunotherapy targets dataset
-   targets_file_path = '/Users/nikhil/Desktop/Bio Hackathon/Cancer immunotherapy targets approved and undergoing clinical trials.xlsx'  # Replace with your file path
+   targets_file_path = './Cancer immunotherapy targets approved and undergoing clinical trials.xlsx'  # Replace with your file path
    targets_data = load_immunotherapy_targets(targets_file_path)
 
 
