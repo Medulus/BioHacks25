@@ -2,65 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Immunotherapy - Biohacks 25</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    form {
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background: #f9f9f9;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .form-group input {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-    }
-    .submit-btn {
-      background-color: #1abc9c;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .submit-btn:hover {
-      background-color: #16a085;
-    }
-  </style>
+  <title>Futuristic Immunotherapy AI Dashboard</title>
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form action="/submit" method="post">
-    <h1>Immunotherapy Form</h1>
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <!-- 3D Scene Container -->
+  <div class="scene-container" id="scene-container"></div>
+  
+  <!-- Main Dashboard Wrapper -->
+  <div class="dashboard">
+    <!-- Sidebar (Optional) -->
+    <div class="sidebar">
+      <h2>AI Immunotherapy</h2>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Patients</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
     </div>
     
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <h1>Doctor Portal</h1>
+        <!-- Just an example button -->
+        <button class="button neon-btn">Profile</button>
+      </header>
+
+      <!-- Glassmorphism Card with Form -->
+      <div class="form-section glass-card">
+        <h2>Patient Immunotherapy Form</h2>
+        <form id="immunoForm">
+          <div class="form-group">
+            <label for="patientName">Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="patientEmail">Email:</label>
+            <input type="email" id="patientEmail" name="patientEmail" required>
+          </div>
+
+          <div class="form-group">
+            <label for="patientSymptoms">Symptoms:</label>
+            <textarea id="patientSymptoms" name="patientSymptoms" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="patientHistory">Medical History:</label>
+            <textarea id="patientHistory" name="patientHistory" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="button neon-btn">Submit</button>
+        </form>
+      </div>
+      
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2025 Biohacks 25 - Futuristic Immunotherapy Dashboard</p>
+      </footer>
     </div>
-    
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <input type="text" id="message" name="message" placeholder="Your message">
-    </div>
-    
-    <button type="submit" class="submit-btn">Submit</button>
-  </form>
+  </div>
+
+  <!-- External Libraries (CDN) -->
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  
+  <!-- Main Script -->
+  <script src="script.js"></script>
 </body>
 </html>
